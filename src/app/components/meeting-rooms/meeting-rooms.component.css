@@ -1,0 +1,46 @@
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+ }
+ .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e7eaee;
+}
+.btn {
+ margin-left: 20px;
+}
+
+.wide-select {
+  min-width: 50%;
+  min-height: 40px;
+}
+
+.error-text, .cursor{
+cursor: pointer;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: white;
+  font-weight: bold;
+}
+
+.meeting-section {
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}

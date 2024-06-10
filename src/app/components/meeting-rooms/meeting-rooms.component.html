@@ -1,0 +1,72 @@
+<div class="header">
+  <span>Book Room Meeting </span>
+  <div class="nav-links">
+  <span>{{username}}</span>
+  <a class="cursor"  (click)="logout()">Logout</a></div>
+</div>
+<button class="btn btn-primary"  (click)="bookMeeting()" >Book Meeting</button> 
+<div class="container">
+  <div class="meeting-section">
+    <h2>Your Upcoming Meetings</h2>
+    <table class="custom-table">
+      <thead>
+        <tr>
+          <th scope="col">Sr No</th>
+          <th scope="col">User Name</th>
+          <th scope="col">Agenda</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Room</th>
+ 
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let meeting of upcomingMeetings; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ meeting.userName }}</td>
+          <td>{{ meeting.agenda }}</td>
+          <td>{{ meeting.meetingDate }}</td>
+          <td>{{ meeting.startTime }} - {{meeting.endTime}}</td>
+          <td>{{ meeting.meetingRoom }}</td>
+          <td (click)=deleteMeeting(meeting.id) class="error-text">Delete<i class="fa fa-trash-o"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="meeting-section">
+    <h2> Rooms Meeting Details</h2>
+    <div class="form-group">
+      <label for="meetingRoom">Select Meeting Room</label>
+      <select id="meetingRoom" (change)="onRoomChange($event)" class="wide-select" >
+        <option value="" class="wide-select" >Choose Meeting Room</option>
+        <option  class="wide-select" *ngFor="let room of meetingRooms">
+          {{room.name}}
+        </option>
+      </select>
+    </div>
+    <table class="custom-table">
+      <thead>
+        <tr>
+          <th scope="col">Sr No</th>
+          <th scope="col">User Name</th>
+          <th scope="col">Agenda</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Room</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let meeting of selectedMeetingRoom; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ meeting.userName }}</td>
+          <td>{{ meeting.agenda }}</td>
+          <td>{{ meeting.meetingDate }}</td>
+          <td>{{ meeting.startTime }} - {{meeting.endTime}}</td>
+          <td>{{ meeting.meetingRoom}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+{
+  "meeting-rooms": [
+    {
+      "name": "Room #1",
+      "id": "73cf"
+    },
+    {
+      "name": "Room #2",
+      "id": "3d0a"
+    },
+    {
+      "name": "Room #3",
+      "id": "3d95"
+    },
+    {
+      "name": "Room #4",
+      "id": "fcb0"
+    },
+    {
+      "name": "Room #5",
+      "id": "8ede"
+    },
+    {
+      "name": "Room #6",
+      "id": "6dd4"
+    },
+    {
+      "name": "Room #7",
+      "id": "2cee"
+    },
+    {
+      "name": "Room #8",
+      "id": "bd6a"
+    },
+    {
+      "name": "Room #9",
+      "id": "170d"
+    },
+    {
+      "name": "Room #10",
+      "id": "879e"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "userName": "Infrrd Test",
+      "agenda": "Test Meet",
+      "meetingDate": "2024-06-17",
+      "startTime": "09:30",
+      "endTime": "12:30",
+      "meetingRoom": "Room #1"
+    },
+    {
+      "id": "3",
+      "userName": "platform_admin@rakuten.com",
+      "agenda": "Test Meet",
+      "meetingDate": "2024-06-17",
+      "startTime": "09:30",
+      "endTime": "12:30",
+      "meetingRoom": "Room #3"
+    },
+    {
+      "userName": "Test",
+      "meetingDate": "2024-06-17",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "meetingRoom": "Room #2",
+      "agenda": "hk",
+      "id": "4"
+    },
+    {
+      "userName": "mounika",
+      "meetingDate": "2024-06-10",
+      "startTime": "09:56",
+      "endTime": "13:57",
+      "meetingRoom": "Room #5",
+      "agenda": "gg",
+      "id": "6"
+    },
+    {
+      "userName": "d",
+      "meetingDate": "2024-06-10",
+      "startTime": "10:55",
+      "endTime": "12:55",
+      "meetingRoom": "Room #1",
+      "agenda": "hi",
+      "id": "9"
+    },
+    {
+      "userName": "d",
+      "meetingDate": "2024-06-12",
+      "startTime": "12:01",
+      "endTime": "14:01",
+      "meetingRoom": "Room #2 -- Available",
+      "agenda": "agenda",
+      "id": "19"
+    },
+    {
+      "id": "e938",
+      "userName": "Test",
+      "meetingDate": "2024-06-17",
+      "startTime": "09:39",
+      "endTime": "14:39",
+      "meetingRoom": "Room #4 -- Available",
+      "agenda": "Agenda"
+    }
+  ]
+}
