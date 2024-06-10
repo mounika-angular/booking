@@ -1,5 +1,9 @@
 # BookMeetingRoom
 
+##Credtionals for Login
+User Name: any user Name
+Password: Password123
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
 ## Development server
@@ -25,3 +29,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Running json-server
+Run `json-server --watch data.json` after installing json-server. By default it will run in `http://localhost:3000/`.
